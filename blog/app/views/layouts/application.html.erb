@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blog</title>
+  <title>To The Top</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= stylesheet_link_tag    'application', 'http://fonts.googleapis.com/css?family=Raleway:400,700' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/aerial_tramway.png">
 </head>
 <body>
   <div id="sidebar">
     <div id="logo">
       <%= link_to root_path do %>
-        <%= image_tag "logo.svg" %>
+        <%= image_tag "aerial_tramway.svg" %>
       <% end %>
     </div>
 
@@ -34,7 +35,7 @@
 
   <div id="main_content">
     <div id="header">
-      <p>All Posts</p>
+      <p>Getting Places Quickly</p>
       <div class="buttons">
         <button class="button"><%= link_to "New Post", new_post_path %></button>
         <button class="button">Log Out</button>
