@@ -9,11 +9,20 @@ rails s
 // create first controller
 rails g controller posts
 
-// create model
+// create Post model
 rails g model Post title:string body:text
 
 // migrate the model
 rake db:migrate
+
+// create Comment model
+rails g model Comment name:string body:text post:references
+
+// migrate the model
+rake db:migrate
+
+// generate comments controller
+rails g controller comments
 
 
 
