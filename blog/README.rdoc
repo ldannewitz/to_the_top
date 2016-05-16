@@ -27,6 +27,22 @@ rails g controller comments
 // generate pages controller ('About' page)
 rails g controller pages
 
+// after adding devise to Gemfile, install devise
+rails g devise:install
+
+//
+rails g devise:views
+
+// create User migration & model
+rails g devise User
+
+// migrate
+rake db:migrate
+
+
+
+
+
 
 
 This README would normally document whatever steps are necessary to get the
