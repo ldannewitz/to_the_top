@@ -1,0 +1,72 @@
+== README
+
+// create rails app
+rails new blog
+
+// start rails server
+rails s
+
+// create first controller
+rails g controller posts
+
+// create Post model
+rails g model Post title:string body:text
+
+// migrate the model
+rake db:migrate
+
+// create Comment model
+rails g model Comment name:string body:text post:references
+
+// migrate the model
+rake db:migrate
+
+// generate comments controller
+rails g controller comments
+
+// generate pages controller ('About' page)
+rails g controller pages
+
+// after adding devise to Gemfile, install devise
+rails g devise:install
+
+//
+rails g devise:views
+
+// create User migration & model
+rails g devise User
+
+// migrate
+rake db:migrate
+
+
+
+
+
+
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
