@@ -24,6 +24,9 @@ rake db:migrate
 // generate comments controller
 rails g controller comments
 
+// generate pages controller ('About' page)
+rails g controller pages
+
 
 
 This README would normally document whatever steps are necessary to get the
